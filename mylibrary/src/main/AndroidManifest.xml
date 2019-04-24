@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xiaoma.mylibrary">
+
+    <application>
+        <activity android:name="com.xiaoma.mylibrary.LibraryActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <data
+                    android:host="com.xiaoma.mylibrary.libraryactivity"
+                    android:scheme="router" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
